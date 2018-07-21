@@ -39,14 +39,14 @@ OP_RETURN_BITCOIN_IP = '127.0.0.1'  # IP address of your bitcoin node
 OP_RETURN_BITCOIN_USE_CMD = False  # use command-line instead of JSON-RPC?
 
 if OP_RETURN_BITCOIN_USE_CMD:
-    OP_RETURN_BITCOIN_PATH = '/usr/bin/bitcoin-cli'  # path to bitcoin-cli executable on this server
+    OP_RETURN_BITCOIN_PATH = '/usr/local/bin/bitcoin-cli'  # path to bitcoin-cli executable on this server
 
 else:
     OP_RETURN_BITCOIN_PORT = '8332'  # leave empty to use default port for mainnet/testnet
     OP_RETURN_BITCOIN_USER = 'test'  # leave empty to read from ~/.bitcoin/bitcoin.conf (Unix only)
     OP_RETURN_BITCOIN_PASSWORD = 'test'  # leave empty to read from ~/.bitcoin/bitcoin.conf (Unix only)
 
-OP_RETURN_BTC_FEE = 0.0001  # BTC fee to pay per transaction
+OP_RETURN_BTC_FEE = 0.001  # BTC fee to pay per transaction
 OP_RETURN_BTC_DUST = 0.00001  # omit BTC outputs smaller than this
 
 OP_RETURN_MAX_BYTES = 80  # maximum bytes in an OP_RETURN (80 as of Bitcoin 0.11)

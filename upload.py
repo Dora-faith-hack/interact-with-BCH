@@ -22,6 +22,8 @@ def push_op_return_to_bch(data_type, sha256_value):
     print("OP_RETURN: ", op_return_value)
 
     res = OP_RETURN_send(sender_address, 0.001, op_return_value)
+    print(res)
+
     tx_id = res.get("txid")
     print("TX id: ", tx_id)
 

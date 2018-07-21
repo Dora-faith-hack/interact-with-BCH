@@ -1,7 +1,7 @@
 class IEXIST:
 
     head = "IEXIST"
-    status_type = 0x00
+    status_type = 0
     data_hash = ""
 
     def get_op_return_value(self, status, type, data_hash):
@@ -17,6 +17,7 @@ class IEXIST:
         else:
             print("[ERROR] Wrong status code number !")
 
+        self.status_type &= 0x00ff
         self.status_type = chr(self.status_type)
 
         self.data_hash = data_hash
