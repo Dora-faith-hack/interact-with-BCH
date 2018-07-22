@@ -1,11 +1,11 @@
 from recall import *
-# from upload import *
+from upload import *
 
 file_path = 'test_file'
 
 if __name__ == '__main__':
     # TODO: socket to upload and give (filepath, data_type)
-    # upload_file(file_path, data_type=0)
+    upload_file(file_path, data_type=0)
     # TODO: save the TX id with the file to database
 
     # TODO: socket to recall and give
